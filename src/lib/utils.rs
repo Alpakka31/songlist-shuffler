@@ -9,6 +9,7 @@ macro_rules! print_arrow {
     };
 }
 
+/// Checks if two vectors are equal
 pub fn are_vectors_equal(vector1: &Vec<Song>, vector2: &Vec<Song>) -> bool {
     vector1 == vector2
 }
