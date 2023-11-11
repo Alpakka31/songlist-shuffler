@@ -89,8 +89,8 @@ impl SongList {
 
     /// Removes a song from a song list
     pub fn remove(&mut self, song_name: &str) -> Result<(), String> {
-        if let Some(index) = self.songs.
-                             iter()
+        if let Some(index) = self.songs
+                             .iter()
                              .position(|s| s.name() == song_name) {
             print_arrow!("Removing song '{}' from song list", song_name);
             self.songs.remove(index);
